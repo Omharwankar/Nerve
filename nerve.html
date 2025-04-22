@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nerve.css">
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" onclick="selectView('Bullish')">Bullish</div>
+        <div class="tab active" onclick="selectView('Bearish')">Bearish</div>
+        <div class="tab" onclick="selectView('Rangebound')">Rangebound</div>
+        <div class="tab" onclick="selectView('Volatile')">Volatile</div>
+      </div>
+    
+      <div class="dropdown">
+        <select id="dateSelect" onchange="renderStrategies()">
+         
+        </select>
+      </div>
+    
+      <div id="strategyContainer" class="strategy-list"></div>
+
+      <script src="nerve.js"></script>
+</body>
+</html>
